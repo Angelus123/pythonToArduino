@@ -10,9 +10,12 @@ while 1:
 
     x = input()
 
-    if x == '1':
-        arduino.write(b'1')
+    if x == 'd':
+        arduino.write(b'd')
         print("LED is on")
-    elif x == '0':
-        arduino.write(b'0')
+    elif x == 'r':
+        arduino.write(b'r')
+        print("LED is off")
+    elif x == 'c':
+        arduino.write(b'c')
         print("LED is off")
